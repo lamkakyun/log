@@ -3,8 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
+<style>
+    .add_time_form
+    {
+        width: 100%;
+        max-width: 330px;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+</style>
 <body>
+
+<div class="container">
+
+    <form class="add_time_form" method="post">
+
+        <div class="row">
+            <div class="col">
+                <select class="custom-select custom-select-lg">
+                    <option value="">PLEASE SELECT A EVENT</option>
+                    {volist name="time_item_list" id="item"}
+                    <option value="{$item['id']}">{$item['name']}</option>
+                    {/volist}
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">ADD TIME</button>
+            </div>
+        </div>
+
+    </form>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+<script>
+    $('.add_time_form').submit(function(){
+        alert(111);
+        return false;
+    });
+</script>
 
 </body>
 </html>
