@@ -1,0 +1,32 @@
+{extend name="common@bs4_template" /}
+
+{block name="page_title"}
+<title>ADD A EVENT</title>
+{/block}
+
+{block name="content"}
+<div class="container">
+
+    <h5>ALREADY EXIST EVENT</h5>
+
+    <ul class="list-group">
+        {volist name="time_item_list" id="item"}
+        <li class="list-group-item">{$item['event']}</li>
+        {/volist}
+    </ul>
+
+    <form method="post">
+        <div class="form-group">
+            <label for="event">EVENT NAME</label>
+            <input type="text" class="form-control" id="event" name="event" placeholder="ADD A EVENT">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="addEvent($(this))">ADD EVENT</button>
+    </form>
+
+</div>
+
+{/block}
+
+{block name="footer"}
+{js href="/static/js/myevent.js" /}
+{/block}

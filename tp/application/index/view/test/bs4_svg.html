@@ -1,0 +1,52 @@
+{extend name="common@bs4_template" /}
+
+{block name="content"}
+
+<div class="container">
+
+    <h6>svg width 450 * 150, put rect(0 0 1200 400) to svg(viewBox里的4个数字的意思是：把svg的左上角10,10 到 右下角1200 400 区域内的图像放入扩大或者缩放到
+        svg中)(svg 就好象一个显示器， viewBox 就是 内容)</h6>
+
+    <svg width="450px" height="150px" viewBox="10 10 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+        <desc>Example rect01 - rectangle with sharp corners</desc>
+
+        <rect x="10" y="10" width="100" height="50"
+              fill="red" stroke="blue" stroke-width="2"/>
+
+        <rect x="400" y="100" width="400" height="200"
+              fill="yellow" stroke="navy" stroke-width="10"/>
+    </svg>
+
+    <h6>g tag means global.</h6>
+    <h6>translate: move in horizontal or vertical</h6>
+    <h6>rotate: rotate in clockwise</h6>
+    <svg width="450px" height="150px" viewBox="10 10 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+        <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
+
+        <rect x="100" y="100" width="400" height="200" rx="50" fill="green" />
+
+        <g transform="translate(700 210) rotate(-30)">
+            <rect x="0" y="0" width="400" height="200" rx="50" fill="none" stroke="purple" stroke-width="30" />
+        </g>
+    </svg>
+
+    <h6>svg circle: cx -> coordinate-x, r -> radius</h6>
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+
+        <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
+
+        <circle cx="600" cy="200" r="100" fill="red" stroke="blue" stroke-width="10"  />
+
+    </svg>
+
+    <h6>svg eclipse: </h6>
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+
+        <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
+
+        <circle cx="600" cy="200" r="100" fill="red" stroke="blue" stroke-width="10"  />
+
+    </svg>
+</div>
+
+{/block}

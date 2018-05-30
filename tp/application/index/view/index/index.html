@@ -1,65 +1,47 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-</head>
+{extend name="common@bs4_template" /}
+
+{block name="page_title"}
+<title>ADD A EVENT</title>
+{/block}
+
+{block name="css_style"}
 <style>
-    .add_time_form
-    {
+    .add_time_form {
         width: 100%;
         max-width: 330px;
         padding-top: 50px;
         margin: 0 auto;
     }
+    .white-font {color: white;}
 </style>
-<body>
+{/block}
 
+{block name="content"}
+<div class="container-fluid white_font">
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <a class="navbar-brand white-font" href="{:url('addEvent', '', '')}">ADD EVENT</a>
+        <a class="navbar-brand white-font" href="{:url('eventLogList', '', '');}">EVENT LOG</a>
+    </nav>
+</div>
 <div class="container">
+
 
     <form class="add_time_form" method="post">
 
-        <div class="row">
-            <div class="col">
-                <select class="custom-select custom-select-lg">
-                    <option value="">PLEASE SELECT A EVENT</option>
-                    {volist name="time_item_list" id="item"}
-                    <option value="{$item['id']}">{$item['name']}</option>
-                    {/volist}
-                </select>
-            </div>
-        </div>
+        <select class="custom-select custom-select-lg" name="event_id">
+            <option value="">PLEASE SELECT A EVENT</option>
+            {volist name="time_item_list" id="item"}
+            <option value="{$item['id']}">{$item['event']}</option>
+            {/volist}
+        </select>
 
-        <div class="row">
-            <div class="col">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">ADD TIME</button>
-            </div>
-        </div>
-
+        <button class="btn btn-lg btn-primary btn-block" type="button" onclick="addEventLog($(this))">LOG TIME</button>
     </form>
-
-
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+{/block}
 
-<script>
-    $('.add_time_form').submit(function(){
-        alert(111);
-        return false;
-    });
-</script>
-
-</body>
-</html>
+{block name="footer"}
+{js href="/static/js/myevent.js" /}
+{/block}

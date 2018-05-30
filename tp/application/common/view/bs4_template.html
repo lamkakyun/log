@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{block name="header"}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {css href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css" /}
+{/block}
+
+{block name="page_title"}
+    <title>{$title ? $title : 'Document'}</title>
+{/block}
+
+{block name="css_style"}
+    <!-- 自定义 CSS 样式 -->
+{/block}
+</head>
+<body>
+<div class="modal" tabindex="-1" role="dialog" id="tip_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">MSG</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+{block name="content"}
+<div class="container">
+    <h1>bootstrap4 default template.</h1>
+</div>
+{/block}
+
+{block name="footer_bootstrap"}
+{js href="/static/bower_components/jquery/dist/jquery.min.js" /}
+{js href="/static/bower_components/bootstrap/assets/js/vendor/popper.min.js" /}
+{js href="/static/bower_components/bootstrap/dist/js/bootstrap.min.js" /}
+{/block}
+
+{block name="footer"}
+<!-- 之定义 js -->
+{/block}
+
+</body>
+</html>
