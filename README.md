@@ -4,8 +4,6 @@
 - composer global require "laravel/installer"
 
 
-
-
 ## to do list
 1.time statistic
 2.task arrangement
