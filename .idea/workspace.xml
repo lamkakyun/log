@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d27fb799-b11a-428e-b547-aab6f8243082" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp/application/common/view/bs4_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp/application/common/view/bs4_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp/application/index/view/index/add_event.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp/application/index/view/index/add_event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp/application/index/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp/application/index/view/test/test_bs4.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp/application/index/view/test/test_bs4.html" afterDir="false" />
     </list>
     <ignored path="log.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,59 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bs4_album.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_event.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp/application/index/view/index/add_event.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp/application/index/view/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bs4_svg.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_svg.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#svg#9;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_bs4.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/test_bs4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bs4_template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp/application/common/view/bs4_template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -120,9 +68,7 @@
         <option value="$PROJECT_DIR$/tp/application/index/service/TimeService.php" />
         <option value="$PROJECT_DIR$/tp/application/index/view/index/add_event.html" />
         <option value="$PROJECT_DIR$/tp/public/static/js/myevent.js" />
-        <option value="$PROJECT_DIR$/tp/.gitignore" />
         <option value="$PROJECT_DIR$/tp/public/static/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/tp/application/index/controller/MoneyTrack.php" />
         <option value="$PROJECT_DIR$/tp/application/index/controller/Task.php" />
         <option value="$PROJECT_DIR$/tp/application/index/controller/Words.php" />
@@ -130,6 +76,8 @@
         <option value="$PROJECT_DIR$/../../Projects/erp/newerp/Application/Order/View/OrderRule/showAddRule.html" />
         <option value="$PROJECT_DIR$/tp/application/index/view/test/bs4_svg.html" />
         <option value="$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html" />
+        <option value="$PROJECT_DIR$/tp/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -184,67 +132,6 @@
               <item name="log" type="462c0819:PsiDirectoryNode" />
               <item name="tp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="extra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="log" type="b2602c69:ProjectViewProjectNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="tp" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -260,6 +147,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Files\Coding\log" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Files\Coding\log\tp\public\static\js" />
       <recent name="C:\Files\Coding\log\tp\application\common\view" />
@@ -303,12 +193,12 @@
       <updated>1527585480285</updated>
       <workItem from="1527847685036" duration="97000" />
       <workItem from="1527847808841" duration="106000" />
-      <workItem from="1527847947297" duration="2348000" />
+      <workItem from="1527847947297" duration="2530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2551000" />
+    <option name="totallyTimeSpent" value="2733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
@@ -548,20 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp/public/static/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -681,6 +557,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_svg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#svg#9;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/test_bs4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -695,13 +581,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_svg.html">
+    <entry file="file://$PROJECT_DIR$/tp/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#svg#9;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
