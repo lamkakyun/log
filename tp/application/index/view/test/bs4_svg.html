@@ -17,7 +17,8 @@
     <h6>svg width 450 * 150, put rect(0 0 1200 400) to svg(viewBox里的4个数字的意思是：把svg的左上角10,10 到 右下角1200 400 区域内的图像放入扩大或者缩放到
         svg中)(svg 就好象一个显示器， viewBox 就是 内容)</h6>
 
-    <svg width="450px" height="150px" viewBox="10 10 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="10 10 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
         <desc>Example rect01 - rectangle with sharp corners</desc>
 
         <rect x="10" y="10" width="100" height="50"
@@ -30,7 +31,8 @@
     <h6>g tag means global.</h6>
     <h6>translate: move in horizontal or vertical</h6>
     <h6>rotate: rotate in clockwise</h6>
-    <svg width="450px" height="150px" viewBox="10 10 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="10 10 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
         <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
 
         <rect x="100" y="100" width="400" height="200" rx="50" fill="green"/>
@@ -41,7 +43,8 @@
     </svg>
 
     <h6>svg circle: cx -> coordinate-x, r -> radius</h6>
-    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
 
         <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
 
@@ -50,7 +53,8 @@
     </svg>
 
     <h6>svg eclipse: </h6>
-    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
 
         <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
 
@@ -65,7 +69,8 @@
     </svg>
 
     <h6>svg line:</h6>
-    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
 
         <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
 
@@ -80,7 +85,8 @@
     </svg>
 
     <h6>svg poly line:</h6>
-    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
 
         <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
 
@@ -96,7 +102,8 @@
     </svg>
 
     <h6>svg polygon:</h6>
-    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
 
         <rect x="1" y="1" width="1198" height="398" fill="none" stroke="blue" stroke-width="2"/>
 
@@ -110,8 +117,10 @@
 
     </svg>
 
-    <h6>svg path, M:move to(Start a new sub-path), z:close path, L or l: lineto(supper case is absolute, lower case is relative), c: curve to, h: horizontal lineto, v: vertical lineto</h6>
-    <svg width="450px" height="150px" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <h6>svg path, M:move to(Start a new sub-path), z:close path, L or l: lineto(supper case is absolute, lower case is
+        relative), c: curve to, h: horizontal lineto, v: vertical lineto</h6>
+    <svg width="450px" height="150px" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
 
         <rect x="1" y="1" width="398" height="398"
               fill="none" stroke="blue"/>
@@ -119,10 +128,13 @@
               fill="red" stroke="blue" stroke-width="3"/>
     </svg>
 
-    <h6>svg cubic(3阶) bezier curve, C command usage: C control_point1 control_point2 end_point, S:shorthand/smooth curveto(S和C是一对组合，职责是给C大仙补刀用的。)</h6>
+    <h6>svg cubic(3阶) bezier curve, C command usage: C control_point1 control_point2 end_point, S:shorthand/smooth
+        curveto(S和C是一对组合，职责是给C大仙补刀用的。)</h6>
     <svg width="450px" height="450px" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" version="1.1"
          style="background-color: GrayText">
-        <text x="50" y="50" fill="yellow">start point is (100, 200), end point is (400, 200), control points are (100, 100) (400, 100)</text>
+        <text x="50" y="50" fill="yellow">start point is (100, 200), end point is (400, 200), control points are (100,
+            100) (400, 100)
+        </text>
         <path class="SamplePath" d="M100,200 C100,100 400,100 400,200"/>
         <path class="SamplePath" d="M100,500 C25,400 475,400 400,500"/>
         <path class="SamplePath" d="M100,800 C175,700 325,700 400,800"/>
@@ -131,31 +143,50 @@
         <path class="SamplePath" d="M600,800 C625,700 725,700 750,800 S875,900 900,800"/>
     </svg>
 
-    <h6>svg quadratic(2阶) Bézier curve, Q:quadratic Bézier curveto, T: like S, Shorthand/smooth quadratic Bézier curveto</h6>
+    <h6>svg quadratic(2阶) Bézier curve, Q:quadratic Bézier curveto, T: like S, Shorthand/smooth quadratic Bézier
+        curveto</h6>
     <h6>Q command usage: Q control_point end_point</h6>
-    <svg width="450px" height="150px" viewBox="200 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: GrayText">
+    <svg width="450px" height="150px" viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
         <path d="M0,300 Q200,50 400,300 T800,300" fill="none" stroke="red" stroke-width="5"/>
     </svg>
 
-
-    <svg width="12cm" height="5.25cm" viewBox="0 0 1200 400"
-         xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <title>Example arcs01 - arc commands in path data</title>
-        <desc>Picture of a pie chart with two pie wedges and
-            a picture of a line with arc blips</desc>
+    <h6>svg elliptical arc, A:</h6>
+    <svg width="450px" height="150px" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         style="background-color: GrayText">
+        xmlns="http://www.w3.org/2000/svg" version="1.1">
         <rect x="1" y="1" width="1198" height="398"
-              fill="none" stroke="blue" stroke-width="1" />
+              fill="none" stroke="blue" stroke-width="1"/>
 
+        <text x="400" y="50" fill="yellow">draw 3/4 circle</text>
+        // start with (300,200), horizontal relative line to -150, set radius_x = 150, radius_y = 150, big arch, arch end point is relative move x + 150, y -150
         <path d="M300,200 h-150 a150,150 0 1,0 150,-150 z"
-              fill="red" stroke="blue" stroke-width="5" />
+              fill="red" stroke="blue" stroke-width="5"/>
         <path d="M275,175 v-150 a150,150 0 0,0 -150,150 z"
-              fill="yellow" stroke="blue" stroke-width="5" />
+              fill="yellow" stroke="blue" stroke-width="5"/>
 
         <path d="M600,350 l 50,-25
            a25,25 -30 0,1 50,-25 l 50,-25
            a25,50 -30 0,1 50,-25 l 50,-25
            a25,75 -30 0,1 50,-25 l 50,-25
-           a25,100 -30 0,1 50,-25 l 50,-25"fill="none" stroke="red" stroke-width="5"  />
+           a25,100 -30 0,1 50,-25 l 50,-25" fill="none" stroke="red" stroke-width="5"/>
+    </svg>
+
+    <h6></h6>
+    <svg width="450px" height="325px" style="background-color: GrayText">
+        <path d="M80 80
+           A 45 45, 0, 0, 0, 125 125
+           L 125 80 z" fill="green"/>
+        <path d="M230 80
+           A 45 45, 0, 1, 0, 275 125
+           L 275 80 Z" fill="red"/>
+        <path d="M80 230
+           A 45 45, 0, 0, 1, 125 275
+           L 125 230 Z" fill="purple"/>
+        <path d="M230 230
+           A 45 45, 0, 1, 1, 275 275
+           L 275 230 Z" fill="blue"/>
+    </svg>
 
 </div>
 
