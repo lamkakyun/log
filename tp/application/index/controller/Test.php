@@ -55,4 +55,15 @@ class Test extends Controller
     {
         return $this->fetch();
     }
+
+
+    public function testChartjs()
+    {
+        return $this->fetch();
+    }
+
+    public function lifeGame()
+    {
+        return $this->fetch();
+    }
 }

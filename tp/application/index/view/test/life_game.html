@@ -1,0 +1,128 @@
+{extend name="common@bs4_template" /}
+
+{block name="content"}
+
+<div class="container">
+
+    <canvas id="myChart"></canvas>
+    <h3>LIFE GAME</h3>
+    <p class="text-muted">
+        100 children, at the beginning, every child has 100 dollars.
+        every time, a child give random another child 1 dollar.
+    </p>
+
+</div>
+
+{/block}
+
+{block name="footer"}
+{js href="/static/bower_components/chart.js/dist/Chart.js" /}
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    var options = {
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    offsetGridLines: true
+                }
+            }],
+            yAxes: [{
+                display: true,
+                ticks: {
+                    beginAtZero: true,
+                    steps: 10,
+                    stepValue: 5,
+                    max: 1000,
+                    min: -1000,
+                }
+            }]
+        }
+    };
+
+    var initData = new Array();
+    var initValue = 100;
+    var default_child_count = 100;
+    var labels = [];
+    var in_game_index = [];
+
+    var timespan = 1;
+    var max_runtime = 1000;
+    var min_allow = -100;
+    var current_run_time = 0;
+    var max_lose = 100;
+
+    for (var i = 1; i <= default_child_count; i++) {
+        labels.push("child " + i);
+        initData.push(initValue);
+        in_game_index.push(i-1);
+    }
+
+
+    var dataOptions = {
+        labels: labels,
+        datasets: [{
+            label: '#100 people money',
+            data: initData,
+
+            borderWidth: 1
+        }]
+    };
+
+
+    // dataOptions.datasets[0].data[0] = 1000;
+    var myBarChart = new Chart(ctx, {
+        type: 'bar',
+        data: dataOptions,
+        options: options
+    });
+
+
+
+    var interval_id = setInterval(function () {
+        current_run_time ++;
+        // step 1: get random 2 child
+        var child_count = in_game_index.length;
+        var child1_index = Math.floor(Math.random() * child_count);
+        var child2_index = Math.floor(Math.random() * child_count);
+        while (child1_index == child2_index) {
+            child2_index = Math.floor(Math.random() * child_count)
+        }
+
+        var random_money = Math.floor(Math.random() * max_lose)
+        initData[in_game_index[child1_index]] -= random_money;
+        initData[in_game_index[child2_index]] += random_money;
+
+        if (initData[in_game_index[child1_index]] <= min_allow)
+        {
+            in_game_index.splice(child1_index, 1);
+        }
+
+        // myBarChart.data.datasets[0].data = initData;
+        console.log("run time:" + current_run_time);
+
+        if (current_run_time % 500 == 0)
+        {
+            myBarChart.update();
+        }
+
+        if (current_run_time >= max_runtime)
+        {
+            initData = initData.sort(function (a,b) { return a -b; });
+            console.log("init data:", initData);
+
+            var total = 0;
+            for (var i = 0;i< initData.length;i++) total += initData[i];
+
+            // check total
+            console.log("in game index:", in_game_index);
+            console.log("total:" + total)
+
+            myBarChart.update();
+            clearInterval(interval_id);
+        }
+    }, timespan);
+
+</script>
+{/block}

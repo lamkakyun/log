@@ -1,0 +1,51 @@
+{extend name="common@bs4_template" /}
+
+{block name="content"}
+
+<h1>LIFE GAME</h1>
+
+<canvas id="myChart"></canvas>
+
+{/block}
+
+{block name="footer"}
+{js href="/static/bower_components/chart.js/dist/Chart.js" /}
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    var options = {
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    offsetGridLines: true
+                }
+            }]
+        }
+    };
+
+    var data = {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, -19, 3, 5, 2, 3],
+
+            borderWidth: 1
+        }]
+    }
+
+
+    var myBarChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
+
+    setTimeout(function () {
+        myBarChart.data.datasets[0].data[1] = 19;
+        myBarChart.update();
+    }, 3000)
+
+
+</script>
+{/block}
