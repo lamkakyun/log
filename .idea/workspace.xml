@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d27fb799-b11a-428e-b547-aab6f8243082" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/log.iml" afterPath="$PROJECT_DIR$/.idea/log.iml" />
@@ -36,6 +37,13 @@
       <change beforePath="$PROJECT_DIR$/tp/runtime/.gitignore" afterPath="$PROJECT_DIR$/tp/runtime/.gitignore" />
       <change beforePath="$PROJECT_DIR$/tp/think" afterPath="$PROJECT_DIR$/tp/think" />
       <change beforePath="$PROJECT_DIR$/tp/vendor/.gitignore" afterPath="$PROJECT_DIR$/tp/vendor/.gitignore" />
+=======
+      <change afterPath="$PROJECT_DIR$/tp/application/index/view/test/bs4_carousel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp/application/index/view/test/bs4_check_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp/application/index/controller/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp/application/index/controller/Test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html" afterDir="false" />
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
     </list>
     <ignored path="log.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,6 +64,7 @@
     <favorites_list name="log" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/album/index.html">
@@ -78,6 +87,86 @@
         </entry>
       </file>
     </leaf>
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Test.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tp/application/index/controller/Test.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="404">
+                  <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bs4_carousel.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_carousel.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="764">
+                  <caret line="199" selection-start-line="199" selection-end-line="199" selection-end-column="8" />
+                  <folding>
+                    <element signature="n#div#0;n#main#0;n#!!top" />
+                    <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#src#0;n#img#0;n#div#2;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+                    <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#div#1;n#div#0;n#div#1;n#main#0;n#!!top" />
+                    <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#div#2;n#div#0;n#div#1;n#main#0;n#!!top" />
+                    <element signature="n#src#0;n#img#0;n#div#2;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#src#0;n#img#0;n#div#1;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#src#0;n#img#0;n#div#1;n#div#2;n#div#1;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#src#0;n#img#0;n#div#1;n#div#3;n#div#1;n#main#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bs4_check_form.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_check_form.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="472">
+                  <caret line="178" column="49" lean-forward="true" selection-start-line="177" selection-start-column="53" selection-end-line="178" selection-end-column="49" />
+                  <folding>
+                    <element signature="n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                    <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                    <element signature="n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                    <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                    <element signature="n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                    <element signature="n#div#5;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/checkout/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="form-validation.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/checkout/form-validation.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -119,10 +208,17 @@
         <option value="$PROJECT_DIR$/tp/application/index/view/test/bs4_svg.html" />
         <option value="$PROJECT_DIR$/tp/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/tp/application/index/view/test/test_chatjs.html" />
         <option value="$PROJECT_DIR$/tp/application/index/controller/Test.php" />
         <option value="$PROJECT_DIR$/tp/application/index/view/test/life_game.html" />
         <option value="$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html" />
+=======
+        <option value="$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html" />
+        <option value="$PROJECT_DIR$/tp/application/index/view/test/bs4_carousel.html" />
+        <option value="$PROJECT_DIR$/tp/application/index/controller/Test.php" />
+        <option value="$PROJECT_DIR$/tp/application/index/view/test/bs4_check_form.html" />
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
       </list>
     </option>
   </component>
@@ -153,9 +249,16 @@
       <path value="$PROJECT_DIR$/tp/vendor/topthink/think-queue" />
     </include_path>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,6 +276,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,12 +418,138 @@
               <item name="examples" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="album" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="4.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="4.1" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="tp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="4.1" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="checkout" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,7 +557,11 @@
     <property name="SearchEverywhereHistoryKey" value="test&#9;FILE&#9;file://C:/Files/Coding/log/tp/application/index/controller/Test.php" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projects/en" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+=======
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -380,14 +614,20 @@
       <updated>1527585480285</updated>
       <workItem from="1527847685036" duration="97000" />
       <workItem from="1527847808841" duration="106000" />
+<<<<<<< HEAD
       <workItem from="1527847947297" duration="2530000" />
       <workItem from="1527993107746" duration="1408000" />
       <workItem from="1527995025224" duration="6567000" />
       <workItem from="1528032936586" duration="844000" />
+=======
+      <workItem from="1527847947297" duration="10020000" />
+      <workItem from="1528081624853" duration="11342000" />
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="11552000" />
   </component>
   <component name="ToolWindowManager">
@@ -413,6 +653,33 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="21565000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +704,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/tp/application/index/view/index/add_event.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -473,6 +741,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
     <entry file="file://$PROJECT_DIR$/tp/thinkphp/library/think/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -639,6 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tp/application/index/controller/Task.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
         </state>
@@ -646,6 +917,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Projects/erp/newerp/Application/Order/View/OrderRule/showAddRule.html" />
     <entry file="file://$PROJECT_DIR$/tp/application/index/controller/Index.php">
+=======
+        <state>
+          <caret selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Projects/erp/newerp/Application/Order/View/OrderRule/showAddRule.html">
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
@@ -669,6 +948,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/test_bs4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -677,6 +957,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tp/.gitignore">
+=======
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/dist/css/bootstrap-grid.min.css">
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -690,6 +973,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -698,6 +982,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_svg.html">
+=======
+    <entry file="file://$PROJECT_DIR$/tp/application/index/view/index/add_event.html">
+>>>>>>> ab2bb1e7bd13e94785f422553d8ca4c757953120
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
@@ -745,6 +1032,133 @@
         <state relative-caret-position="300">
           <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/dist/css/bootstrap-grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="1278" column="35" lean-forward="true" selection-start-line="1278" selection-start-column="35" selection-end-line="1278" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/album/album.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/blog/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#5;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#6;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#7;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/carousel/carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/carousel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/application/index/controller/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_carousel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="199" selection-start-line="199" selection-end-line="199" selection-end-column="8" />
+          <folding>
+            <element signature="n#div#0;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#2;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#main#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#2;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#2;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#3;n#div#1;n#main#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/checkout/form-validation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/public/static/bower_components/bootstrap/docs/4.1/examples/checkout/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp/application/index/view/test/bs4_check_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="178" column="49" lean-forward="true" selection-start-line="177" selection-start-column="53" selection-end-line="178" selection-end-column="49" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#5;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
