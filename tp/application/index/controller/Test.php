@@ -27,6 +27,16 @@ class Test extends Controller
         return $this->fetch();
     }
 
+    public function bs4Carousel()
+    {
+        return $this->fetch();
+    }
+
+    public function bs4CheckForm()
+    {
+        return $this->fetch();
+    }
+
 
     public function bs4Blog()
     {
