@@ -1,0 +1,30 @@
+{extend name="common@bs4_template" /}
+{block name="css_style"}
+<style>
+.my-form-control-dark{
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+</style>
+{/block}
+
+{block name="content"}
+
+<nav class="navbar navbar-dark bg-dark fixed-top flex-nowrap p-0">
+    <a class="navbar-brand col-md-2 col-sm-3 mr-0" href="#">Company name</a>
+    <input type="text" class="form-control my-form-control-dark w-100" placeholder="Search">
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+    </div>
+</div>
+
+{/block}

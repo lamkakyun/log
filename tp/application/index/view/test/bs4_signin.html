@@ -1,0 +1,47 @@
+{extend name="common@bs4_template" /}
+{block name="css_style"}
+<style>
+    html, body{
+        height: 100%;
+        background-color: #f5f5f5;
+    }
+.my-form{
+    width: 100%;
+    max-width: 330px;
+}
+</style>
+{/block}
+
+{block name="content"}
+
+<div class="d-flex w-100 h-100 align-items-center">
+    <form action="" class="my-form text-center mx-auto">
+
+        <h3 class="font-weight-normal">Please sign in</h3>
+
+        <div class="form-group">
+            <input type="text" class="form-control form-control-lg" name="" id="" aria-describedby="helpId" placeholder="Email address">
+        </div>
+
+        <div class="form-group">
+            <input type="password"
+                   class="form-control form-control-lg" name="" id="" aria-describedby="helpId" placeholder="Password">
+        </div>
+
+        <div class="form-check mb-2">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                Remember me
+            </label>
+        </div>
+
+        <div class="form-group">
+            <input type="submit"
+                   class="form-control btn btn-primary btn-lg" name="" id="" aria-describedby="helpId" placeholder="" value="Sign in">
+        </div>
+
+        <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+    </form>
+</div>
+
+{/block}

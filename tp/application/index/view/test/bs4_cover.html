@@ -1,0 +1,66 @@
+{extend name="common@bs4_template" /}
+{block name="css_style"}
+<style>
+    html,
+    body {
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 42em;
+    }
+
+    a, a:hover, a:focus {
+        color: #fff;
+    }
+
+    .nav a {
+        color: gray;
+        font-weight: bold;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 1em;
+    }
+
+    .nav a.active {
+        color: #fff;
+        border-bottom: 3px solid;
+    }
+
+    .nav a:hover {
+        border-bottom: 3px solid;
+    }
+</style>
+{/block}
+
+{block name="content"}
+<div class="container w-100 h-100 d-flex flex-column p-3">
+    <header class="mb-auto d-flex justify-content-between">
+
+        <h3 class="">Cover</h3>
+
+        <nav class="nav justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="text-center">
+        <h1>Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
+            text, and add your own fullscreen background photo to make it your own.</p>
+        <p>
+            <button class="btn btn-lg btn-light">Learn more</button>
+        </p>
+    </main>
+
+    <footer class="text-center mt-auto">
+        <p class="text-muted">
+            Cover template for <strong class="text-light">Bootstrap</strong>, by <strong class="text-light">@mdo</strong>.
+        </p>
+    </footer>
+</div>
+{/block}
