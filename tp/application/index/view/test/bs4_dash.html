@@ -1,18 +1,48 @@
 {extend name="common@bs4_template" /}
 {block name="css_style"}
 <style>
-.my-form-control-dark{
-    color: #fff;
-    background-color: rgba(255, 255, 255, .1);
-    border-color: rgba(255, 255, 255, .1);
-}
+    .my-form-control-dark {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-color: rgba(255, 255, 255, .1);
+    }
+
+    .my-navbar input[type=text] {
+        border-radius: 0;
+    }
+
+    .my-leftside {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        padding: 2.5rem 0;
+    }
+
+    .my-leftside a, svg {
+        color: #333;
+    }
+
+    .my-leftside a.active, a.active > svg {
+        color: #007bff;
+    }
+
+    .my-leftside a > svg {
+        margin-right: .5em;
+    }
+
+    .my-main {
+        padding: 2.5rem 0;
+    }
+    .my-main-content{
+        min-width: 400px;
+    }
 </style>
 {/block}
 
 {block name="content"}
 
-<nav class="navbar navbar-dark bg-dark fixed-top flex-nowrap p-0">
-    <a class="navbar-brand col-md-2 col-sm-3 mr-0" href="#">Company name</a>
+<nav class="navbar navbar-dark bg-dark fixed-top flex-nowrap p-0 my-navbar">
+    <a class="navbar-brand col-md-2 col-sm-3 mr-0 d-none d-md-inline" href="#">Company name</a>
     <input type="text" class="form-control my-form-control-dark w-100" placeholder="Search">
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -24,7 +54,155 @@
 <div class="container-fluid">
     <div class="row">
 
+        <nav class="nav flex-column col-md-2 bg-light my-leftside d-none d-md-block">
+            <a class="nav-link align-items-center d-flex active" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-home" color="#3a4049" data-reactid="642">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <strong>Dashboard</strong>
+            </a>
+
+            <a class="nav-link align-items-center d-flex" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-file-minus" color="#3a4049" data-reactid="522">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="9" y1="15" x2="15" y2="15"></line>
+                </svg>
+                <strong>Orders</strong>
+            </a>
+
+            <a class="nav-link align-items-center d-flex" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-shopping-cart" color="#3a4049" data-reactid="1047">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <strong>Products</strong>
+            </a>
+
+            <a class="nav-link align-items-center d-flex" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-users" color="#3a4049" data-reactid="1267">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <strong>Customers</strong>
+            </a>
+
+            <a class="nav-link align-items-center d-flex" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-file-text" color="#3a4049" data-reactid="532">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <strong>Reports</strong>
+            </a>
+
+            <a class="nav-link align-items-center d-flex" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-activity" color="#3a4049" data-reactid="37">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                <strong>Integrations</strong>
+            </a>
+        </nav>
+
+        <div class="my-main col-md-10 my-main ml-auto">
+
+            <div class="my-main-content py-2 px-4">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Dashboard</h2>
+                    <div class="d-none d-md-block">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">share</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">export</button>
+                        </div>
+                        <button class="btn btn-sm btn-outline-secondary">This week</button>
+                    </div>
+                </div>
+
+                <hr class="my-2">
+
+                <canvas id="myChart"></canvas>
+
+                <div>
+                    <h2>Section title</h2>
+                    <table class="table table-sm">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
 
+{/block}
+
+{block name="footer"}
+{js href="/static/bower_components/chart.js/dist/Chart.js" /}
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "My First dataset",
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [0, 10, 5, 2, 20, 30, 45],
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+</script>
 {/block}

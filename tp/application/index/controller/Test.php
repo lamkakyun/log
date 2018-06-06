@@ -58,12 +58,18 @@ class Test extends Controller
         return $this->fetch();
     }
 
-    public function bs4Blog()
+    // bingo
+    public function bs4Dash()
     {
         return $this->fetch();
     }
 
-    public function bs4Dash()
+    public function bs4Price()
+    {
+        return $this->fetch();
+    }
+
+    public function bs4Blog()
     {
         return $this->fetch();
     }

@@ -1,5 +1,12 @@
 # use laravel framework to build this system
 
+# git usage: remove cache 
+```angular2html
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+```
+
 ## laravel installtion
 - composer global require "laravel/installer"
 
