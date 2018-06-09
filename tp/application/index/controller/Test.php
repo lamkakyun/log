@@ -64,7 +64,14 @@ class Test extends Controller
         return $this->fetch();
     }
 
+    // bingo
     public function bs4Price()
+    {
+        return $this->fetch();
+    }
+
+    // bingo
+    public function bs4Product()
     {
         return $this->fetch();
     }
@@ -74,21 +81,19 @@ class Test extends Controller
         return $this->fetch();
     }
 
-    public function bs4Product()
-    {
-        return $this->fetch();
-    }
-
+    // bingo
     public function bs4Svg()
     {
         return $this->fetch();
     }
 
+    // bingo
     public function testChartjs()
     {
         return $this->fetch();
     }
 
+    // bingo
     public function lifeGame()
     {
         return $this->fetch();
