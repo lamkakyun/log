@@ -23,6 +23,20 @@ class Index extends Controller
         return TimeService::getInstance()->addEventLog($params);
     }
 
+    public function logBtn()
+    {
+        $params = request()->request();
+        if (request()->method() == 'GET')
+        {
+            $time_item_list = TimeService::getInstance()->getTimeItemList();
+            $this->assign('time_item_list', $time_item_list);
+            return $this->fetch();
+        }
+
+        $params['event_id'] = $params['id'];
+        return TimeService::getInstance()->addEventLog($params);
+    }
+
 
     /**
      * @AUTHOR: Lamkakyun

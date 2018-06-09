@@ -21,6 +21,10 @@ class Test extends Controller
         return $this->fetch();
     }
 
+    public function bs4Test()
+    {
+        return $this->fetch();
+    }
 
     // bingo
     public function bs4Album()
@@ -95,6 +99,12 @@ class Test extends Controller
 
     // bingo
     public function lifeGame()
+    {
+        return $this->fetch();
+    }
+
+    // bigno, generate from
+    public function svgChinamap()
     {
         return $this->fetch();
     }

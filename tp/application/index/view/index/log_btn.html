@@ -1,0 +1,59 @@
+{extend name="common@bs4_template" /}
+{block name="css_style"}
+<style>
+.my-btn{
+    min-height: 142px;
+}
+</style>
+{/block}
+
+{block name="content"}
+
+<div class="container my-2">
+    <div class="row">
+
+        {volist name="time_item_list" id="item"}
+        <div class="col-6 p-1">
+            <button class="my-btn btn btn-outline-dark w-100 p-0 mt-2" data-id="{$item['id']}">
+                {$item['event']}
+            </button>
+        </div>
+        {/volist}
+    </div>
+</div>
+
+{/block}
+
+{block name="footer"}
+
+<script>
+    $('.my-btn').click(function(){
+        var thisobj = $(this);
+        var id = thisobj.attr('data-id');
+        if (!id)
+        {
+            $('#tip_modal').find('.modal-body > p').text("event not exists");
+            $('#tip_modal').modal('show');
+        }
+
+        $.ajax({
+            url: '',
+            type: 'POST',
+            data: {id: id},
+            dataType: 'JSON',
+            success: function(ret)
+            {
+                $('#tip_modal').find('.modal-body > p').text(ret.msg);
+                $('#tip_modal').modal('show');
+                if (ret.success)
+                {
+                    $('#tip_modal').on('hidden.bs.modal', function(){
+                        location.reload();
+                    });
+                }
+            }
+        });
+    })
+</script>
+
+{/block}
