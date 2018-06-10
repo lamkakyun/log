@@ -4,7 +4,7 @@ namespace app\index\controller;
 use app\index\service\MoneyService;
 use think\Controller;
 
-class MoneyTrack extends Controller
+class Moneytrack extends Controller
 {
     /**
      * add money track, UI just like calculator
