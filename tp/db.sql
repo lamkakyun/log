@@ -19,3 +19,17 @@ CREATE TABLE money_log
   money_item    VARCHAR(255)   NULL
 )
   ENGINE = InnoDB;
+
+
+CREATE TABLE mission
+(
+  id               INT AUTO_INCREMENT
+    PRIMARY KEY,
+  task             VARCHAR(255) NULL,
+  comment          TEXT         NULL,
+  status           TINYINT      NULL
+  COMMENT '1 start 2 stop 3 bingo 4 deleted',
+  create_time      INT          NULL,
+  last_update_time INT          NULL
+)
+  ENGINE = InnoDB;
