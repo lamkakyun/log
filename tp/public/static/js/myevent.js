@@ -1,14 +1,12 @@
 function addEvent(thisobj)
 {
-    var form = thisobj.parent('form');
-    _default_form_handler(form);
+    submit_form(thisobj);
 }
 
 
 function addEventLog(thisobj)
 {
-    var form = thisobj.parent('form');
-    _default_form_handler(form);
+    submit_form(thisobj);
 }
 
 
@@ -31,4 +29,10 @@ function _default_form_handler(form)
             }
         }
     });
+}
+
+function submit_form(thisobj)
+{
+    var form = thisobj.parent('form');
+    _default_form_handler(form);
 }

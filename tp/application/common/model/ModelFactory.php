@@ -15,4 +15,14 @@ class ModelFactory
     {
         return Db::table('log_time_logging');
     }
+
+    public static function getMoneyItemsModel()
+    {
+        return Db::table('money_items');
+    }
+
+    public static function getMoneyLogModel()
+    {
+        return Db::table('money_log');
+    }
 }

@@ -4,4 +4,51 @@
 {/block}
 
 {block name="content"}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MONEY TRACK</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">LOG</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container py-3">
+
+    <form action="" method="post">
+        <div class="form-group">
+            <div class="form-group">
+                <select class="form-control form-control-lg" name="money_item" id="">
+                    <option>chose a money item</option>
+                    {volist name="money_items" id="item"}
+                    <option value="{$item}">{$item}</option>
+                    {/volist}
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="number" name="money_amount" class="form-control form-control-lg" placeholder="money amount">
+        </div>
+        <div class="form-group">
+            <input type="text" name="money_comment" id="money_comment" class="form-control form-control-lg" placeholder="money comment">
+        </div>
+        <button type="button" class="btn btn-outline-secondary btn-lg form-control" onclick="submit_form($(this))">Submit</button>
+    </form>
+
+</div>
+
+{/block}
+
+
+{block name="footer"}
+{js href="/static/js/myevent.js" /}
+<script>
+    $('#money_comment').focus();
+</script>
 {/block}

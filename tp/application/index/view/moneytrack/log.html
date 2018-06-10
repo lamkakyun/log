@@ -4,7 +4,6 @@
 {/block}
 
 {block name="content"}
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">MONEY TRACK</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,31 +22,24 @@
 <div class="container py-3">
 
     <ul class="list-group">
-        {volist name="money_items" id="item"}
-        <li class="list-group-item">{$item}</li>
+        {volist name="log_list" id="item"}
+        <li class="list-group-item">
+            {:date('Y-m-d H:i:s', $item['create_time'])}
+            {$item['money_item']}
+            【{$item['money_amount']}】
+            <p class="text-info">comment: {$item['money_comment']}</p>
+        </li>
         {/volist}
     </ul>
-
-    <form action="" method="post">
-        <div class="form-group">
-            <div class="form-group">
-                <h1>ADD MONEY TRACK ITEM</h1>
-            </div>
-        </div>
-        <div class="form-group">
-            <input type="text" name="money_item" id="money_item" class="form-control form-control-lg" placeholder="money track item">
-        </div>
-
-        <button type="button" class="btn btn-outline-secondary btn-lg form-control" onclick="submit_form($(this))">ADD ITEM</button>
-    </form>
 
 </div>
 
 {/block}
 
+
 {block name="footer"}
 {js href="/static/js/myevent.js" /}
 <script>
-    $('#money_item').focus();
+    $('#money_comment').focus();
 </script>
 {/block}

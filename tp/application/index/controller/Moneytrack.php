@@ -14,12 +14,30 @@ class Moneytrack extends Controller
     public function index()
     {
         $params = request()->request();
+
         if (request()->method() == 'GET')
         {
+            $fixed_items = [
+                'FOOD',
+                'TRAFFIC',
+                'CLOTH'
+            ];
+            $money_items = MoneyService::getInstance()->getAllMoneyItems();
+            $money_items = array_merge($money_items, $fixed_items);
+
+            $this->assign('money_items', $money_items);
             return $this->fetch();
         }
 
         return MoneyService::getInstance()->addMoneyLog($params);
+    }
+
+    public function log()
+    {
+        $log_list = MoneyService::getInstance()->getAllLog();
+
+        $this->assign('log_list', $log_list);
+        return $this->fetch();
     }
 
     /**
@@ -31,14 +49,17 @@ class Moneytrack extends Controller
     public function moneyItems()
     {
         $params = request()->request();
-        $fixed_items = [
-            'FOOD',
-            'TRAFFIC',
-            'CLOTH'
-        ];
-
         if (request()->method() == 'GET')
         {
+            $fixed_items = [
+                'FOOD',
+                'TRAFFIC',
+                'CLOTH'
+            ];
+            $money_items = MoneyService::getInstance()->getAllMoneyItems();
+            $money_items = array_merge($money_items, $fixed_items);
+
+            $this->assign('money_items', $money_items);
             return $this->fetch();
         }
 
