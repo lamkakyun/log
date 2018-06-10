@@ -25,4 +25,9 @@ class ModelFactory
     {
         return Db::table('money_log');
     }
+
+    public static function getMissionModel()
+    {
+        return Db::table('mission');
+    }
 }
