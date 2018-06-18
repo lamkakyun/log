@@ -7,7 +7,8 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="javascript:void(0)">Misssion</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -24,55 +25,92 @@
             </li>
         </ul>
         <!--<form class="form-inline my-2 my-lg-0">-->
-            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
         <!--</form>-->
     </div>
 </nav>
 
-<div class="container">
+<div class="container-fluid">
 
 
+    <div class="row">
 
-    <h1 class="display-4">MISSION</h1>
+        <div class="col-md-3 d-none d-md-block">
+            <h6 class="pt-4">RULE</h6>
+            <ul class="list-group">
+                {volist name="rule_list" id="item"}
+                <li class="list-group-item list-group-item-success position-relative">
+                    {$item['rule']}
+                    <a href="javascript:void(0)" class="position-absolute" style="top: 0;right: 0;" data-url="{:url('delRule', '', '')}?id={$item['id']}" onclick="common_module.submit_link($(this))"><svg class="feather feather-delete sc-dnqmqq jxshSx" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="446"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line></svg></a>
+                </li>
+                {/volist}
+            </ul>
 
-    <ul class="list-group">
+            <form class="py-3" method="post" action="{:url('addRule', '', '')}">
+                <h6>ADD RULE</h6>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-sm" name="rule" id="rule" placeholder="rule">
+                </div>
 
-        {volist name="task_list" id="item"}
-        <li class="list-group-item">
-            <p class="p-0 m-0">
-                <span class="">{$item['task']}</span>
-                <span class="text-info">comment: {$item['comment']}</span>
-                <span class="d-block text-warning">current status: {$task_status[$item['status']]}</span>
-            </p>
-            <p class="p-0 m-0">
-                <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=3&id={$item['id']}" class="btn btn-sm btn-outline-success" onclick="submit_link($(this))">task bingo</a>
-                <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=2&id={$item['id']}" class="btn btn-sm btn-outline-secondary" onclick="submit_link($(this))">suspend</a>
-                <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=4&id={$item['id']}" class="btn btn-sm btn-outline-danger" onclick="submit_link($(this))">delete task</a>
-            </p>
-        </li>
-        {/volist}
-    </ul>
-
-
-    <form class="py-3">
-        <h4>ADD NEW MISSION</h4>
-        <div class="form-group">
-            <input type="text" class="form-control" name="task" id="task" placeholder="task">
+                <button type="button" class="btn btn-outline-secondary form-control form-control-sm btn-sm"
+                        onclick="submit_form($(this))">ADD RULE
+                </button>
+            </form>
         </div>
 
-        <div class="form-group">
-            <textarea name="comment" id="comment" cols="30" rows="3" class="form-control" placeholder="task comment"></textarea>
+        <div class="col-md-9">
+            <h1 class="display-4">MISSION</h1>
+
+            <ul class="list-group">
+
+                {volist name="task_list" id="item"}
+                <li class="list-group-item">
+                    <p class="p-0 m-0">
+                        <span class="">{$item['task']}</span>
+                        <span class="text-info">comment: {$item['comment']}</span>
+                        <span class="d-block text-warning">current status: {$task_status[$item['status']]}</span>
+                    </p>
+                    <p class="p-0 m-0">
+                        <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=3&id={$item['id']}"
+                           class="btn btn-sm btn-outline-success" onclick="submit_link($(this))">task bingo</a>
+                        <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=2&id={$item['id']}"
+                           class="btn btn-sm btn-outline-secondary" onclick="submit_link($(this))">suspend</a>
+                        <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=4&id={$item['id']}"
+                           class="btn btn-sm btn-outline-danger" onclick="submit_link($(this))">delete task</a>
+                    </p>
+                </li>
+                {/volist}
+            </ul>
+
+
+            <form class="py-3">
+                <h4>ADD NEW MISSION</h4>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="task" id="task" placeholder="task">
+                </div>
+
+                <div class="form-group">
+                    <textarea name="comment" id="comment" cols="30" rows="3" class="form-control"
+                              placeholder="task comment"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-outline-secondary form-control" onclick="submit_form($(this))">ADD
+                    MISSION
+                </button>
+            </form>
         </div>
 
-        <button type="button" class="btn btn-outline-secondary form-control" onclick="submit_form($(this))">ADD MISSION</button>
-    </form>
+    </div>
+
+
 </div>
 
 {/block}
 
 {block name="footer"}
 {js href="/static/js/myevent.js" /}
+{js href="/static/js/common.js" /}
 <script>
     $('#task').focus();
 </script>

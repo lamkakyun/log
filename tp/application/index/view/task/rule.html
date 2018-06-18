@@ -1,0 +1,30 @@
+{extend name="common@bs4_template" /}
+{block name="css_style"}
+
+{/block}
+
+{block name="content"}
+
+<div class="container">
+<ul class="list-group">
+
+    {volist name="list" id="item"}
+    <li class="list-group-item">
+        <p class="p-0 m-0">
+            <span class="">{$item['task']}</span>
+            <span class="text-info">comment: {$item['comment']}</span>
+            <span class="d-block text-warning">current status: {$task_status[$item['status']]}</span>
+        </p>
+    </li>
+    {/volist}
+</ul>
+    <form class="py-3">
+        <h4>ADD RULE</h4>
+        <div class="form-group">
+            <input type="text" class="form-control" name="rule" id="rule" placeholder="rule">
+        </div>
+
+        <button type="button" class="btn btn-outline-secondary form-control" onclick="submit_form($(this))">ADD RULE</button>
+    </form>
+</div>
+{/block}

@@ -30,4 +30,9 @@ class ModelFactory
     {
         return Db::table('mission');
     }
+
+    public static function getRuleModel()
+    {
+        return Db::table('rule');
+    }
 }
