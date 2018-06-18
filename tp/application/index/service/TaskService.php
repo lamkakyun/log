@@ -14,6 +14,12 @@ class TaskService
     public function getTaskList($params)
     {
         $where = ['status' => ['IN', ['1', '2', '3']]];
+
+        if ($params['status'])
+        {
+            $where['status'] = $params['status'];
+        }
+
         return ModelFactory::getMissionModel()->where($where)->order('create_time DESC')->select();
     }
 

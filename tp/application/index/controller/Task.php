@@ -7,6 +7,13 @@ use think\Controller;
 class Task extends Controller
 {
 
+    private $task_status = [
+        '1' => 'start',
+        '2' => 'stop',
+        '3' => 'bingo',
+        '4' => 'deleted',
+    ];
+
     /**
      * task list
      * @AUTHOR: Lamkakyun
@@ -18,17 +25,11 @@ class Task extends Controller
 
         if (request()->method() == 'GET')
         {
+            $params['status'] = ['IN', ['1', '2']];
             $task_list = TaskService::getInstance()->getTaskList($params);
 
-            $task_status = [
-                '1' => 'start',
-                '2' => 'stop',
-                '3' => 'bingo',
-                '4' => 'deleted',
-            ];
-
             $this->assign('task_list', $task_list);
-            $this->assign('task_status', $task_status);
+            $this->assign('task_status', $this->task_status);
             return $this->fetch();
         }
 
@@ -47,5 +48,34 @@ class Task extends Controller
     }
 
 
+    /**
+     *
+     * @author: lamkakyun
+     * @date: Jun 18, 2018
+     */
+    public function bingoTask()
+    {
+        $params = request()->request();
+        $params['status'] = ['IN', '3'];
+        $task_list = TaskService::getInstance()->getTaskList($params);
+
+        $this->assign('title', 'Bingo Task');
+        $this->assign('task_status', $this->task_status);
+        $this->assign('task_list', $task_list);
+        return $this->fetch('task_list');
+    }
+
+
+    public function deletedTask()
+    {
+        $params = request()->request();
+        $params['status'] = ['IN', '4'];
+        $task_list = TaskService::getInstance()->getTaskList($params);
+
+        $this->assign('title', 'Bingo Task');
+        $this->assign('task_status', $this->task_status);
+        $this->assign('task_list', $task_list);
+        return $this->fetch('task_list');
+    }
 
 }

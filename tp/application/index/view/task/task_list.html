@@ -24,17 +24,14 @@
             </li>
         </ul>
         <!--<form class="form-inline my-2 my-lg-0">-->
-            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
         <!--</form>-->
     </div>
 </nav>
 
 <div class="container">
-
-
-
-    <h1 class="display-4">MISSION</h1>
+    <h1 class="display-4">{$title}</h1>
 
     <ul class="list-group">
 
@@ -45,35 +42,9 @@
                 <span class="text-info">comment: {$item['comment']}</span>
                 <span class="d-block text-warning">current status: {$task_status[$item['status']]}</span>
             </p>
-            <p class="p-0 m-0">
-                <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=3&id={$item['id']}" class="btn btn-sm btn-outline-success" onclick="submit_link($(this))">task bingo</a>
-                <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=2&id={$item['id']}" class="btn btn-sm btn-outline-secondary" onclick="submit_link($(this))">suspend</a>
-                <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=4&id={$item['id']}" class="btn btn-sm btn-outline-danger" onclick="submit_link($(this))">delete task</a>
-            </p>
         </li>
         {/volist}
     </ul>
-
-
-    <form class="py-3">
-        <h4>ADD NEW MISSION</h4>
-        <div class="form-group">
-            <input type="text" class="form-control" name="task" id="task" placeholder="task">
-        </div>
-
-        <div class="form-group">
-            <textarea name="comment" id="comment" cols="30" rows="3" class="form-control" placeholder="task comment"></textarea>
-        </div>
-
-        <button type="button" class="btn btn-outline-secondary form-control" onclick="submit_form($(this))">ADD MISSION</button>
-    </form>
 </div>
 
-{/block}
-
-{block name="footer"}
-{js href="/static/js/myevent.js" /}
-<script>
-    $('#task').focus();
-</script>
 {/block}
