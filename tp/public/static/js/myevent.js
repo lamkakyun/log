@@ -40,22 +40,24 @@ function submit_form(thisobj)
 
 function submit_link(thisobj)
 {
-    var url = thisobj.attr('data-url');
-    $.ajax({
-        url: url,
-        type: 'POST',
-        data: {},
-        dataType: 'JSON',
-        success: function(ret)
-        {
-            $('#tip_modal').find('.modal-body > p').text(ret.msg);
-            $('#tip_modal').modal('show');
-            if (ret.success)
+    eModal.confirm('sure?', 'TIPS').then(function() {
+        var url = thisobj.attr('data-url');
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: {},
+            dataType: 'JSON',
+            success: function(ret)
             {
-                $('#tip_modal').on('hidden.bs.modal', function(){
-                    location.reload();
-                });
+                $('#tip_modal').find('.modal-body > p').text(ret.msg);
+                $('#tip_modal').modal('show');
+                if (ret.success)
+                {
+                    $('#tip_modal').on('hidden.bs.modal', function(){
+                        location.reload();
+                    });
+                }
             }
-        }
+        });
     });
 }
