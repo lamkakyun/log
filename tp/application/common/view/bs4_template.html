@@ -5,6 +5,7 @@
 {block name="header"}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {css href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css" /}
+    {css href="/static/bower_components/izimodal/css/iziModal.css" /}
 {/block}
 
 {block name="page_title"}
@@ -34,6 +35,23 @@
         </div>
     </div>
 </div>
+
+<div class="modal" tabindex="-1" role="dialog" id="iframe_modal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Operation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="" frameborder="0" width="100%" style="min-height: 200px;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 {block name="content"}
 <div class="container">
     <h1>bootstrap4 default template.</h1>
@@ -44,6 +62,10 @@
 {js href="/static/bower_components/jquery/dist/jquery.min.js" /}
 {js href="/static/bower_components/bootstrap/assets/js/vendor/popper.min.js" /}
 {js href="/static/bower_components/bootstrap/dist/js/bootstrap.min.js" /}
+{js href="/static/bower_components/bootstrap-confirmation2/dist/bootstrap-confirmation.min.js" /}
+<!--{js href="/static/bower_components/bootbox.js/bootbox.js" /}-->
+{js href="/static/bower_components/emodal/dist/eModal.min.js" /}
+<!--{js href="/static/bower_components/izimodal/js/iziModal.js" /}-->
 {/block}
 
 {block name="footer"}

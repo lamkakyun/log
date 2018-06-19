@@ -38,6 +38,13 @@ class Index extends Controller
     }
 
 
+    public function delItem()
+    {
+        $params = request()->request();
+        return TimeService::getInstance()->delItem($params);
+    }
+
+
     /**
      * @AUTHOR: Lamkakyun
      * @DATE: 2018-05-30 08:09:06

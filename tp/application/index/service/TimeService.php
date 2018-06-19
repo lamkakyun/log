@@ -12,7 +12,7 @@ class TimeService
 
     public function getTimeItemList()
     {
-        $data = ModelFactory::getLogTimeItemModel()->select();
+        $data = ModelFactory::getLogTimeItemModel()->where(['status' => 1])->select();
         return $data;
     }
 
@@ -58,5 +58,14 @@ class TimeService
             $data[$key]['event'] = ModelFactory::getLogTimeItemModel()->where(['id' => $value['event_id']])->value('event');
         }
         return $data;
+    }
+
+
+    public function delItem($params)
+    {
+        if (!preg_match('/^\d+$/', $params['id'])) return json(['success' => false, 'msg' => 'argument error']);
+        ModelFactory::getLogTimeItemModel()->where(['id' => $params['id']])->update(['status' => 0]);
+
+        return json(['success' => true, 'msg' => 'bingo!']);
     }
 }

@@ -14,6 +14,7 @@
 
         {volist name="time_item_list" id="item"}
         <div class="col-6 p-1">
+            <a href="javascript:void(0)" class="position-absolute" style="top: 25px;right: 15px" data-url="{:url('delItem', '', '')}?id={$item['id']}" onclick="common_module.submit_link($(this))"><svg class="feather feather-trash sc-dnqmqq jxshSx" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="1176"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a>
             <button class="my-btn btn btn-outline-dark w-100 p-0 mt-2" data-id="{$item['id']}">
                 {$item['event']}
             </button>
@@ -25,7 +26,7 @@
 {/block}
 
 {block name="footer"}
-
+{js href="/static/js/common.js" /}
 <script>
     $('.my-btn').click(function(){
         var thisobj = $(this);
@@ -36,22 +37,25 @@
             $('#tip_modal').modal('show');
         }
 
-        $.ajax({
-            url: '',
-            type: 'POST',
-            data: {id: id},
-            dataType: 'JSON',
-            success: function(ret)
-            {
-                $('#tip_modal').find('.modal-body > p').text(ret.msg);
-                $('#tip_modal').modal('show');
-                if (ret.success)
+
+        eModal.confirm('sure?', 'TIPS').then(function() {
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: {id: id},
+                dataType: 'JSON',
+                success: function(ret)
                 {
-                    $('#tip_modal').on('hidden.bs.modal', function(){
-                        location.reload();
-                    });
+                    $('#tip_modal').find('.modal-body > p').text(ret.msg);
+                    $('#tip_modal').modal('show');
+                    if (ret.success)
+                    {
+                        $('#tip_modal').on('hidden.bs.modal', function(){
+                            location.reload();
+                        });
+                    }
                 }
-            }
+            });
         });
     })
 </script>

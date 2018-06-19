@@ -20,13 +20,29 @@ class TaskService
             $where['status'] = $params['status'];
         }
 
-        return ModelFactory::getMissionModel()->where($where)->order('create_time DESC')->select();
+        return ModelFactory::getMissionModel()->where($where)->order('priority DESC, create_time DESC')->select();
     }
 
 
-    public function addTask($params)
+    public function getTaskById($id)
     {
+        return ModelFactory::getMissionModel()->where(['id' => $id])->find();
+    }
+
+
+    public function editTask($params)
+    {
+        $is_eidt = false;
+        if (isset($params['id'])) $is_eidt = true;
+
         if (!$params['task']) return json(['success' => false, 'msg' => 'task is not allow be empty!']);
+
+        if ($is_eidt)
+        {
+            if (!preg_match('/^\d+$/', $params['id'])) return json(['success' => false, 'msg' => 'argument error']);
+            $task_count = ModelFactory::getMissionModel()->where(['id' => $params['id']])->count();
+            if (!$task_count) return json(['success' => false, 'msg' => 'information do not exists']);
+        }
 
         $insert_data = [
             'task' => $params['task'],
@@ -35,8 +51,16 @@ class TaskService
             'last_update_time' => time(),
             'status' => 1, // 1 start 2 stop 3 bingo 4 deleted
         ];
+        if ($is_eidt)
+        {
+            ModelFactory::getMissionModel()->where(['id' => $params['id']])->update($insert_data);
+        }
+        else
+        {
+            ModelFactory::getMissionModel()->insert($insert_data);
+        }
 
-        ModelFactory::getMissionModel()->insert($insert_data);
+
         return json(['success' => true, 'msg' => 'bingo!']);
     }
 
@@ -55,6 +79,19 @@ class TaskService
 
         ModelFactory::getMissionModel()->where($where)->update($update_data);
 
+        return json(['success' => true, 'msg' => 'bingo!']);
+    }
+
+    public function updatePriority($params)
+    {
+        if (!preg_match('/^\d+$/', $params['id'])) return json(['success' => false, 'msg' => 'param error:id']);
+        if (!preg_match('/^\d+$/', $params['priority'])) return json(['success' => false, 'msg' => 'param error:priority']);
+
+        $where = ['id' => $params['id']];
+        $task_count = ModelFactory::getMissionModel()->where($where)->count();
+        if (!$task_count) return json(['success' => false, 'msg' => 'information do not exists']);
+
+        ModelFactory::getMissionModel()->where($where)->update(['priority' => $params['priority']]);
         return json(['success' => true, 'msg' => 'bingo!']);
     }
 }

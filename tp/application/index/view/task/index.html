@@ -71,13 +71,17 @@
                         <span class="text-info">comment: {$item['comment']}</span>
                         <span class="d-block text-warning">current status: {$task_status[$item['status']]}</span>
                     </p>
-                    <p class="p-0 m-0">
-                        <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=3&id={$item['id']}"
-                           class="btn btn-sm btn-outline-success" onclick="submit_link($(this))">task bingo</a>
-                        <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=2&id={$item['id']}"
-                           class="btn btn-sm btn-outline-secondary" onclick="submit_link($(this))">suspend</a>
-                        <a href="javascript:void(-1)" data-url="{:url('updateTask', '', '')}?status=4&id={$item['id']}"
-                           class="btn btn-sm btn-outline-danger" onclick="submit_link($(this))">delete task</a>
+                    <p class="p-0 m-0 d-flex">
+                        <a href="javascript:void(0)" data-url="{:url('updateTask', '', '')}?status=3&id={$item['id']}"
+                           class="btn btn-sm btn-outline-success mr-2" onclick="submit_link($(this))">task bingo</a>
+                        <a href="javascript:void(0)" data-url="{:url('updateTask', '', '')}?status=4&id={$item['id']}"
+                           class="btn btn-sm btn-outline-danger mr-2" onclick="submit_link($(this))">delete task</a>
+                        <a href="javascript:void(0)" data-url="{:url('edit', '', '')}?id={$item['id']}"
+                           class="btn btn-sm btn-outline-secondary mr-auto" onclick="other_module.edit_mission($(this))">edit</a>
+
+                        <span class="text-muted mx-2 task-priority" data-priority="{$item['priority']}">priority: {$item['priority']}</span>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-outline-secondary mr-2" data-url="{:url('modifyPriority','','')}?id={$item['id']}" data-action="plus" onclick="other_module.modify_priority($(this))">+</a>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-outline-secondary mr-2" data-url="{:url('modifyPriority','','')}?id={$item['id']}" data-action="mins" onclick="other_module.modify_priority($(this))">-</a>
                     </p>
                 </li>
                 {/volist}

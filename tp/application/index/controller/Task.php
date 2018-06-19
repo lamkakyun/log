@@ -37,7 +37,25 @@ class Task extends Controller
         }
 
         // add new task
-        return TaskService::getInstance()->addTask($params);
+        return TaskService::getInstance()->editTask($params);
+    }
+
+
+    public function edit()
+    {
+        $params = request()->request();
+
+        if (request()->method() == 'GET')
+        {
+            if (!preg_match('/^\d+$/', $params['id'])) $this->error('task is not exists');
+            $task = TaskService::getInstance()->getTaskById($params['id']);
+
+            $this->assign('task', $task);
+            return $this->fetch();
+        }
+
+        // add new task
+        return TaskService::getInstance()->editTask($params);
     }
 
 
@@ -108,6 +126,13 @@ class Task extends Controller
         if (!preg_match('/^\d+$/', $params['id'])) return json(['success' => false, 'msg' => 'argument error']);
         RuleService::getInstance()->delRule($params);
         return json(['success' => true, 'msg' => 'bingo!']);
+    }
+
+
+    public function modifyPriority()
+    {
+        $params = request()->request();
+        return TaskService::getInstance()->updatePriority($params);
     }
 
 }
