@@ -15,13 +15,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{:url('index')}">current task</a>
+                <a class="nav-link" href="{:url('index', '', '')}">current task</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{:url('bingoTask')}">finished</a>
+                <a class="nav-link" href="{:url('bingoTask', '', '')}">finished</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{:url('deletedTask')}">deleted</a>
+                <a class="nav-link" href="{:url('deletedTask', '', '')}">deleted</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{:url('rule', '', '')}">rules</a>
             </li>
         </ul>
         <!--<form class="form-inline my-2 my-lg-0">-->
@@ -79,7 +82,7 @@
                         <a href="javascript:void(0)" data-url="{:url('edit', '', '')}?id={$item['id']}"
                            class="btn btn-sm btn-outline-secondary mr-auto" onclick="other_module.edit_mission($(this))">edit</a>
 
-                        <span class="text-muted mx-2 task-priority" data-priority="{$item['priority']}">priority: {$item['priority']}</span>
+                        <span class="text-muted mx-2 task-priority d-none d-md-block" data-priority="{$item['priority']}">priority: {$item['priority']}</span>
                         <a href="javascript:void(0)" class="btn btn-sm btn-outline-secondary mr-2" data-url="{:url('modifyPriority','','')}?id={$item['id']}" data-action="plus" onclick="other_module.modify_priority($(this))">+</a>
                         <a href="javascript:void(0)" class="btn btn-sm btn-outline-secondary mr-2" data-url="{:url('modifyPriority','','')}?id={$item['id']}" data-action="mins" onclick="other_module.modify_priority($(this))">-</a>
                     </p>

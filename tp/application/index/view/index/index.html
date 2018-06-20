@@ -17,12 +17,25 @@
 {/block}
 
 {block name="content"}
-<div class="container-fluid white_font">
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <a class="navbar-brand white-font" href="{:url('addEvent', '', '')}">ADD EVENT</a>
-        <a class="navbar-brand white-font" href="{:url('eventLogList', '', '');}">EVENT LOG</a>
-    </nav>
-</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="javascript:void(0)">Log your time</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{:url('addEvent', '', '')}">ADD EVENT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{:url('eventLogList', '', '');}">EVENT LOG</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
 
 

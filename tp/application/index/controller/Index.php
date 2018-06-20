@@ -66,7 +66,12 @@ class Index extends Controller
 
     public function eventLogList()
     {
-        $logs = TimeService::getInstance()->getEventLogs();
-        var_dump($logs);
+        $list = TimeService::getInstance()->getEventLogs();
+
+        $event_list = TimeService::getInstance()->getTimeItemList(['status' => ['IN', ['0', '1']]]);
+
+        $this->assign('list', $list);
+        $this->assign('event_list', $event_list);
+        return $this->fetch();
     }
 }

@@ -1,0 +1,35 @@
+{extend name="common@bs4_template" /}
+
+{block name="page_title"}
+<title>EVENT LOG</title>
+
+
+{block name="content"}
+
+<div class="container">
+
+    <form action="">
+        <select class="form-control form-control-lg my-2" name="event" id="event-select">
+            <option value="">-- SELECT A EVENT --</option>
+            {volist name="event_list" id="item"}
+            <option value="{$item['id']}">{$item['event']}</option>
+            {/volist}
+        </select>
+    </form>
+
+    <ul class="list-group">
+
+        {volist name="list" id="item"}
+        <li class="list-group-item event-{$item['event_id']}">{$item['create_time']} -> {$item['event']}</li>
+        {/volist}
+    </ul>
+</div>
+
+{/block}
+
+{block name="footer"}
+{js href="/static/js/common.js" /}
+<script>
+    event_module.event_filter_init();
+</script>
+{/block}

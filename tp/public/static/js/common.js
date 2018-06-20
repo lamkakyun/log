@@ -75,6 +75,26 @@ var common_module = (function ()
 })();
 
 
+var event_module = (function() {
+    var event_filter_init = function() {
+        $('#event-select').change(function(){
+            var event_id = $(this).val();
+            console.log(event_id);
+            if (!event_id) $('.list-group-item').show();
+            else
+            {
+                $('.list-group-item').hide();
+                $('.event-' + event_id).show();
+            }
+
+        });
+    };
+
+    return {
+        event_filter_init: event_filter_init,
+    };
+})();
+
 var other_module = (function() {
 
     var options = {};

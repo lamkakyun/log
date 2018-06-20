@@ -10,9 +10,14 @@ class TimeService
         return new TimeService();
     }
 
-    public function getTimeItemList()
+    public function getTimeItemList($params = [])
     {
-        $data = ModelFactory::getLogTimeItemModel()->where(['status' => 1])->select();
+        $where = ['status' => 1];
+        if ($params['status'])
+        {
+            $where['status'] = $params['status'];
+        }
+        $data = ModelFactory::getLogTimeItemModel()->where($where)->select();
         return $data;
     }
 
@@ -51,7 +56,7 @@ class TimeService
 
     public function getEventLogs()
     {
-        $data = ModelFactory::getLogTimeLoggingModel()->select();
+        $data = ModelFactory::getLogTimeLoggingModel()->order('create_time DESC')->select();
         foreach ($data as $key => $value)
         {
             $data[$key]['create_time'] = date('Y-m-d H:i:s', $value['create_time']);
