@@ -20,7 +20,10 @@
     <ul class="list-group">
 
         {volist name="list" id="item"}
-        <li class="list-group-item event-{$item['event_id']}">{$item['create_time']} -> {$item['event']}</li>
+        <li class="list-group-item event-{$item['event_id']}">
+            <a href="javascript:void(0)" data-url="{:url('delLog', '', '')}?id={$item['id']}" onclick="common_module.submit_link($(this))"><svg class="feather feather-x sc-dnqmqq jxshSx" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="1336"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
+            {$item['create_time']} -> {$item['event']}
+        </li>
         {/volist}
     </ul>
 </div>

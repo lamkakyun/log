@@ -73,4 +73,12 @@ class TimeService
 
         return json(['success' => true, 'msg' => 'bingo!']);
     }
+
+
+    public function delLog($params)
+    {
+        if (!preg_match('/^\d+$/', $params['id'])) return json(['success' => false, 'msg' => 'argument error']);
+        $ret = ModelFactory::getLogTimeLoggingModel()->where(['id' => $params['id']])->delete();
+        return json(['success' => true, 'msg' => 'bingo!']);
+    }
 }

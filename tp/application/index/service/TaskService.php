@@ -14,6 +14,7 @@ class TaskService
     public function getTaskList($params)
     {
         $where = ['status' => ['IN', ['1', '2', '3']]];
+        $where['type'] = isset($params['type']) ? $params['type'] : 'MISSION';
 
         if ($params['status'])
         {
@@ -50,7 +51,10 @@ class TaskService
             'create_time' => time(),
             'last_update_time' => time(),
             'status' => 1, // 1 start 2 stop 3 bingo 4 deleted
+            'type' => 'MISSION',
         ];
+        if ($params['type']) $insert_data['type'] = $params['type'];
+
         if ($is_eidt)
         {
             ModelFactory::getMissionModel()->where(['id' => $params['id']])->update($insert_data);

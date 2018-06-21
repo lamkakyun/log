@@ -30,6 +30,7 @@ class Task extends Controller
             $task_list = TaskService::getInstance()->getTaskList($params);
             $rule_list = RuleService::getInstance()->getAllRule();
 
+            $this->assign('params', $params);
             $this->assign('rule_list', $rule_list);
             $this->assign('task_list', $task_list);
             $this->assign('task_status', $this->task_status);

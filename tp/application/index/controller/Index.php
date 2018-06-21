@@ -74,4 +74,12 @@ class Index extends Controller
         $this->assign('event_list', $event_list);
         return $this->fetch();
     }
+
+
+    public function delLog()
+    {
+        $params = request()->request();
+        return TimeService::getInstance()->delLog($params);
+//        if (!preg_match('/^\d+$/', $params['id']))
+    }
 }
